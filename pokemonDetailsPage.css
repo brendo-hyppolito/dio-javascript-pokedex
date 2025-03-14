@@ -244,6 +244,11 @@
     text-transform: capitalize;
 }
 
+.tableDetails td.abilities span {
+    width: 100%;
+    text-align: center;
+}
+
 footer .buttons{
     display: flex;
     flex-direction: column;
