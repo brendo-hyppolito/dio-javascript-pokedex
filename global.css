@@ -7,9 +7,11 @@
 body {
     display: flex;
     justify-content: center;
+    align-items: start;
     background-color: #f6f8fc;
     min-height: auto;
     padding: 1rem;
+    width: 100%;
 }
 
 .content {
