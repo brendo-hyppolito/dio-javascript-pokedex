@@ -1,10 +1,8 @@
 .detailsPageContent {
-    justify-self: center;
-    width: auto;
+    width: calc(100% - 2rem);
     max-width: 400px;
-    min-width: 300px;
+    min-width: 320px;
     height: auto;   
-    margin: 1rem; 
     padding: 1rem;
     padding-bottom: 0.3rem;
     background-color: rgb(243, 238, 238);
@@ -12,6 +10,12 @@
     box-sizing: border-box;
     position: relative;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+.pokemonHeader, .tableDetails, footer {
+    margin: 0 auto;
+    width: 100%;
 }
 
 .normal {
@@ -229,15 +233,19 @@
 }
 
 .tableDetails td.abilities {
-    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-self: center;
+    justify-items: center;
     gap: 0.25rem;
     border-radius: 1rem;
     text-transform: capitalize;
+    width: 100%;
+}
+
+.ability {
+   gap: 0;
+   padding: 0;
+   margin: 0;
 }
 
 footer .buttons{

@@ -17,7 +17,7 @@ function convertPokeApiToPokemon (pokemonDetails) {
     pokemon.weight = (pokemonDetails.weight)/10
 
     const abilities = pokemonDetails.abilities.map((ability) => ability.ability.name);
-    pokemon.abilities = abilities.map(ability => `<span>${ability}</span>`).join('');
+    pokemon.abilities = abilities.map(ability => `<p class="ability">${ability}</p>`).join('');
 
     pokemonDetails.stats.forEach(stat => {
         const statName = stat.stat.name;
